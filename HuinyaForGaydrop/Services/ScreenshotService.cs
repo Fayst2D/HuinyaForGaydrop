@@ -12,7 +12,7 @@ public class ScreenshotService : IScreenshotService
         
         graphics.CopyFromScreen(x1,y1,0,0,screenshot.Size,CopyPixelOperation.SourceCopy);
 
-        string path = $"D:/hui{x1}.jpeg";
+        string path = $"D:/hui.jpeg";
         
         screenshot.Save(path, ImageFormat.Jpeg);
 

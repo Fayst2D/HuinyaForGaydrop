@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using Tesseract;
 using TextCopy;
+using System.IO;
 
 namespace HuinyaForGaydrop.Services;
 
@@ -9,8 +10,9 @@ public class ImageTextDetector : IImageTextDetector
     
     public string? DetectText(string path)
     {
-
-        using (var engine = new TesseractEngine("D:/projects/HuinyaForGaydrop", "eng"))
+        
+        
+        using (var engine = new TesseractEngine(Directory.GetCurrentDirectory(), "eng"))
         {
             Clipboard clipboard = new Clipboard();
             

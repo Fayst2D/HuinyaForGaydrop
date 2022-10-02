@@ -44,7 +44,7 @@ else
 while (true)
 {
     Console.WriteLine(textDetector.DetectText(service.GetScreenshot(x1,y1,width,height)));
-    Thread.Sleep(100);
+    //Thread.Sleep(100);
 }
     
 
