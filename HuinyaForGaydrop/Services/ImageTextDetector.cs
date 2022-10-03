@@ -8,7 +8,7 @@ namespace HuinyaForGaydrop.Services;
 public class ImageTextDetector : IImageTextDetector
 {
     
-    public string? DetectText(string path)
+    public string DetectText(string path)
     {
         
         
@@ -33,6 +33,6 @@ public class ImageTextDetector : IImageTextDetector
             }
         }
 
-        return null;
+     
     }
 }
